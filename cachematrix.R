@@ -9,9 +9,10 @@
 ## Provides methods to save a matrix inverse in cache and return it when asked.
 
 makeCacheMatrix <- function(x = matrix()) {
+    
     # Make sure X is a matrix
     if (!is.matrix(x)) {
-        stop("No matrix given")
+        stop("Passed value must be matrix class")
     }
     
     i <- NULL
